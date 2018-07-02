@@ -1,4 +1,4 @@
-extends Sprite
+extends Node
 
 const STRETCH_MODES = [
 	['disabled', SceneTree.STRETCH_MODE_DISABLED],
@@ -48,7 +48,7 @@ func run():
 			
 			var convert_args = [
 				'-repage', '440x274+10+10',
-				'-background', '#008080',
+				'-background', '#282f3d',
 				'-dispose', 'Previous',
 				'-delay', '25',
 				'-loop', '0',
