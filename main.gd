@@ -56,7 +56,7 @@ func run():
 			]
 			for png_file in png_files:
 				convert_args.push_back(png_file)
-			var gif_file = 'gifs/%s_%s.gif' % [stretch_mode[0], stretch_aspect[0]]
+			var gif_file = 'gifs/stretch_%s_%s.gif' % [stretch_mode[0], stretch_aspect[0]]
 			convert_args.push_back(gif_file)
 			print('Creating %s...' % [gif_file])
 			OS.execute('/usr/bin/convert', convert_args, true)
